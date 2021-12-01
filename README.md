@@ -1,4 +1,4 @@
-<h1 align="center">ShimmyPasswordGenerator</h1>
+<h1 align="center">Shimmy Password Generator</h1>
 
 <h4 align="center">A simple password generator.</h4>
 
