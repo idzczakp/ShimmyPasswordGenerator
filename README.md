@@ -9,7 +9,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://lh4.googleusercontent.com/IYBtqwaEXDcZvnXxfstHCiYHkhQzD6lvIAYm5Hl2DJSkSU2ebuRhvPGQy5h1BpXCOXuAqTuaFdjLW93aHFc=w3360-h1758)
+![screenshot](https://idzczak.pl/wp-content/uploads/2021/12/Screenshot-2021-12-01-at-08.20.10.png)
 
 ## Key Features
 
