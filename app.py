@@ -1,28 +1,28 @@
 import random, string
 
-
 def main():
-    print("Welcome to Shimmy's password generator")
-    generate_password()
-    
+    print("\nWelcome to Shimmy's password generator")
+    generate_password() 
+
 def generate_password():
-    lenght = input("Enter desired lenght of the password: ")
+    combined = string.ascii_uppercase + string.ascii_lowercase + string.digits
+    specialcombined = combined + string.punctuation
+    length = ''
+    while not length.isnumeric():
+        length = input("\nEnter desired length of the password: ")
 
-    if lenght.isnumeric():
-        uppercase = string.ascii_uppercase
-        lowercase = string.ascii_uppercase
-        digits = string.digits
-        special = string.punctuation
+    strength = ''
+    while strength not in { '1', '2' }:
+        strength = input("\nPassword strength \n1: weak\n2: strong ")
 
-        combined = uppercase + lowercase + digits + special
-
-        temp = random.sample(combined, int(lenght))
-        password = "".join(temp)
-
-        print(f"Your password is: {password}")
+    if strength == '1':
+        temp = random.sample(combined, int(length))
     else:
-        print("Password lenght needs to be a number :)")
-        generate_password()
+        temp = random.sample(specialcombined, int(length))
+
+    password = "".join(temp)
+    print(f"Your password is: {password}")
+                
 
 if __name__ == "__main__":
     main()
